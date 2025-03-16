@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Game</title>
+  <script type="module" crossorigin src="/assets/index-D2sLQO6W.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DPkpw8Cu.css">
+</head>
+<body>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+    <div id="gameOverlay">
+        <div id="gameUI">
+            <p id="pingText">ping: 0ms</p>
+            <div id="chatContainer">
+                <ul id="chatMessages"></ul>
+                <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off" maxlength="200"/>
+            </div>
+        </div>
+        <div id="overlayAlert">
+            <p id="overlayTitle">Game Started</p>
+        </div>
+    </div> 
+
+    <div id="escapeMenu">
+        <button id="resumeGameButton">Resume</button>
+        <button id="settingsButton">Settings</button>
+        <button id="leaveGameButton">Leave Game</button>
+    </div>
+
+    <div id="mainMenu">
+        <p>Game dot Io</p>
+        <input type="text" id="usernameInput" placeholder="Enter username..." autocomplete="off" maxlength="20"/>
+        <button id="startGameButton">Play</button>
+    </div>
+
+    <div id="popUp">
+        <p id="popUpText">Failed!</p>
+        <button>Ok</button>
+    </div>
+</body>
+</html>
